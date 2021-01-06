@@ -21,6 +21,7 @@ npm i --save lodash / yarn add lodash
 - [10. 实用函数](#10-实用函数)
 - [11. Properties](#11-Properties)
 - [12. Methods](#12-Methods)
+
 ### 1. 数组
 - [1.1 chunk](#1.1-chunk)
 - [1.2 compact](#1.2-compact)
