@@ -17,10 +17,7 @@
 - 实用函数
 - Properties
 - Methods
+### 1.数组
+- [1.chunk](#1-chunk)
 
-## 数组
-
-### 目录
-- [1. _.chunk](#1. _.chunk)
-
-#### 1. _.chunk
+#### 1. chunk
