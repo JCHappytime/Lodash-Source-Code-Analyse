@@ -23,13 +23,22 @@ npm i --save lodash / yarn add lodash
 - [12. Methods](#12-Methods)
 
 ### 1. 数组
-* [1 _.chunk](#1-_.chunk)
+* [1 chunk](#1-chunk)
 * [2 compact](#2-compact)
 * [3 concat](#3-concat)
 
-#### 1 _.chunk
+#### 1 chunk
 
 使用：_.chunk(array, [size=1])
+作用：将array拆分成多个size大小的块，将这些块组成一个新的数组。（如果array无法被分割成全部大小一样的块，则最后剩余的元素将组成一个块。）
+例子：
+```
+_.chunk([1, 2, 3, 4, 5, 6], 2)
+=> [[1, 2], [3, 4], [5, 6]]
+
+_.chunk([1, 2, 3, 4, 5, 6], 4)
+=> [[1, 2, 3, 4],[5, 6]]
+```
 
 
 #### 2 compact
