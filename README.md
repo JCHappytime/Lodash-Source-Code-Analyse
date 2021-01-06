@@ -24,18 +24,18 @@ npm i --save lodash / yarn add lodash
 
 ### 1. 数组
 * [1 chunk](#1-chunk)
-* [1.2 compact](#1.2-compact)
-* [1.3 concat](#1.3-concat)
+* [2 compact](#2-compact)
+* [3 concat](#3-concat)
 
 #### 1 chunk
 
 使用：_.chunk(array, [size=1])
 
 
-#### 1.2 compact
+#### 2 compact
 
 使用：
 
-#### 1.3 concat
+#### 3 concat
 
 使用：
