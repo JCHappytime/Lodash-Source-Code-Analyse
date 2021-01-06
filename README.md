@@ -18,6 +18,8 @@
 - Properties
 - Methods
 ### 1. 数组
-- [1. chunk](#1-chunk)
+- [1.1 chunk](#1.1-chunk)
 
-#### 1. chunk
+#### 1.1 chunk
+
+使用：_.chunk(array, [size=1])
