@@ -23,9 +23,9 @@ npm i --save lodash / yarn add lodash
 - [12. Methods](#12-Methods)
 
 ### 1. 数组
-- [1 chunk](#1-chunk)
-- [1.2 compact](#1.2-compact)
-- [1.3 concat](#1.3-concat)
+* [1 chunk](#1-chunk)
+* [1.2 compact](#1.2-compact)
+* [1.3 concat](#1.3-concat)
 
 #### 1 chunk
 
