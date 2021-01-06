@@ -23,11 +23,11 @@ npm i --save lodash / yarn add lodash
 - [12. Methods](#12-Methods)
 
 ### 1. 数组
-* [1 chunk](#1-chunk)
+* [1 _.chunk](#1-_.chunk)
 * [2 compact](#2-compact)
 * [3 concat](#3-concat)
 
-#### 1 chunk
+#### 1 _.chunk
 
 使用：_.chunk(array, [size=1])
 
