@@ -27,3 +27,12 @@ npm i --save lodash / yarn add lodash
 #### 1.1 chunk
 
 使用：_.chunk(array, [size=1])
+
+
+#### 1.2 compact
+
+使用：
+
+#### 1.3 concat
+
+使用：
