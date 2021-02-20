@@ -11,6 +11,7 @@ npm i --save lodash / yarn add lodash
 ## 目录
 
 - [1. _chunk](#1-_chunk)
+- [2. _slice](#2-_slice)
 
 
 #### 1. _chunk
@@ -28,3 +29,32 @@ _.chunk([1, 2, 3, 4, 5], 2)    // => [[1, 2], [3, 4], [5]]
 _.chunk([1, 2, 3, 4, 5, 6], 3)    // => [[1, 2, 3], [4, 5, 6]]
 
 ```
+源码分析：
+
+```
+function chunk(array, size=1) {
+  size = Math.max(toInteger(size), 0);
+  const length = array === null ? 0 : array.length;
+  if (!length || size < 1) {
+    return [];
+  }
+  let index = 0;
+  let resIndex = 0;
+  const result = new Array(Math.ceil(length / size));
+  
+  while (index < length) {
+    result[resIndex++] = this.slice(array, index, (index += size));
+  }
+  return result;
+}
+```
+这里slice()方法的源码见: [2. _slice](#2-_slice)
+
+
+
+
+
+
+
+
+
