@@ -14,5 +14,10 @@ npm i --save lodash / yarn add lodash
 
 
 #### 1. _chunk
-
-作用：
+```
+_.chunk(array, [size=1])
+参数：
+- array：需要处理的数组
+- [size=1]每个数组区块的长度
+```
+作用：将数组array拆分成多个size长度的区块，并将这些区块组成一个新的数组。如果array无法被分割成全部等长的区块，那么最后剩余的元素将组成一个区块。
