@@ -50,7 +50,7 @@ function chunk(array, size=1) {
 ```
 这里slice()方法的源码见: [2. _slice](#2-_slice)
 
-
+#### 2. _slice
 
 
 
