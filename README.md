@@ -35,7 +35,7 @@ _.chunk([1, 2, 3, 4, 5, 6], 3)    // => [[1, 2, 3], [4, 5, 6]]
 function chunk(array, size=1) {
   size = Math.max(toInteger(size), 0);
   const length = array === null ? 0 : array.length;
-  if (!length || size < 1) {
+  if (!length || size < 1) { // 临界值判断
     return [];
   }
   let index = 0;
