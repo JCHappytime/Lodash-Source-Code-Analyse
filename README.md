@@ -64,7 +64,7 @@ _.slice(array, [start=0], [end=array.length])
 使用示例：
 ```
 _.slice([1, 2, 3, 4, 5], 2, 3)    // => [3]
-_.slice([1, 2, 3, 4, 5, 6], 3)    // => [4, 5, 6]
+_.slice([1, 2, 3, 4, 5, 6], 3)    // => [4, 5, 6] 不传end就默认从下标为3的位置开始到数组结束的位置
 
 ```
 源码分析：
@@ -76,7 +76,7 @@ slice(array, start, end) {
     return [];
   }
   start = start == null ? 0 : start;
-  end = end === undefined ? length : end; // 当用户没有传入end值时，设置end为array的长度
+  end = end === undefined ? length : end; // 当用户没有传入end值时，设置end为array的长度。
 
   if (start < 0) {
     start = -start > length ? 0 : length + start;
