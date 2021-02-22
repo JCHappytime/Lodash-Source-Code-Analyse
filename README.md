@@ -70,7 +70,31 @@ _.slice([1, 2, 3, 4, 5, 6], 3)    // => [4, 5, 6]
 源码分析：
 
 ```
+slice(array, start, end) {
+  let length = array == null ? 0 : array.length;
+  if (!length) {
+    return [];
+  }
+  start = start == null ? 0 : start;
+  end = end === undefined ? length : end; // 当用户没有传入end值时，设置end为array的长度
 
+  if (start < 0) {
+    start = -start > length ? 0 : length + start;
+  }
+  end = end > length ? length : end;
+  if (end < 0) {
+    end += length;
+  }
+  length = start > end ? 0 : (end - start) >>> 0;
+  start >>>= 0;
+
+  let index = -1;
+  const result = new Array(length);
+  while (++index < length) {
+    result[index] = array[index + start];
+  }
+  return result;
+}
 ```
 
 
