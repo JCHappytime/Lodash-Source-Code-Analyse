@@ -76,7 +76,7 @@ slice(array, start, end) {
     return [];
   }
   start = start == null ? 0 : start;
-  end = end === undefined ? length : end; // 当用户没有传入end值时，设置end为array的长度。
+  end = end === undefined ? length : end; // 当用户没有传入end值时，设置end为array的长度。上述示例二既是如此
 
   if (start < 0) {
     start = -start > length ? 0 : length + start;
