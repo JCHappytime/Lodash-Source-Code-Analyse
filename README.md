@@ -50,52 +50,6 @@ function chunk(array, size=1) {
 ```
 这里slice()方法的源码见: [2. _slice](#2-_slice)
 
-#### 2. _slice
-
-```
-_.slice(array, [start=0], [end=array.length])
-参数：
-- array: 待裁剪的数组;
-- [start=0]: 开始位置;
-- [end=array.length]: 结束位置;
-```
-作用：裁剪数组array，从start位置开始到end结束，但不包括end本身的位置。
-
-使用示例：
-```
-_.slice([1, 2, 3, 4, 5], 2, 3)    // => [3]
-_.slice([1, 2, 3, 4, 5, 6], 3)    // => [4, 5, 6] 不传end就默认从下标为3的位置开始到数组结束的位置
-
-```
-源码分析：
-
-```
-slice(array, start, end) {
-  let length = array == null ? 0 : array.length;
-  if (!length) {
-    return [];
-  }
-  start = start == null ? 0 : start;
-  end = end === undefined ? length : end; // 当用户没有传入end值时，设置end为array的长度。上述示例二既是如此
-
-  if (start < 0) {
-    start = -start > length ? 0 : length + start;
-  }
-  end = end > length ? length : end;
-  if (end < 0) {
-    end += length;
-  }
-  length = start > end ? 0 : (end - start) >>> 0;
-  start >>>= 0;
-
-  let index = -1;
-  const result = new Array(length);
-  while (++index < length) {
-    result[index] = array[index + start];
-  }
-  return result;
-}
-```
 
 
 
