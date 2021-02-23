@@ -10,8 +10,9 @@ npm i --save lodash / yarn add lodash
 
 ## 目录
 
-- [1. _chunk](#1-_chunk)
-- [2. _slice](#2-_slice)
+- [1. _slice](https://github.com/JCHappytime/Lodash-Source-Code-Analyse/issues/1)
+- [2. _chunk](#1-_chunk)
+
 
 
 #### 1. _chunk
