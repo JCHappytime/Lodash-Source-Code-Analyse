@@ -10,9 +10,9 @@
 npm i --save lodash
 ```
 - 使用yarn
-
-
-npm i --save lodash / yarn add lodash
+```
+yarn add lodash
+```
 
 ## 目录
 
