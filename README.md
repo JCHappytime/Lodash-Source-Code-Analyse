@@ -7,8 +7,10 @@
 ## 安装
 - 使用npm
 ```
-npm
+npm i --save lodash
 ```
+- 使用yarn
+
 
 npm i --save lodash / yarn add lodash
 
