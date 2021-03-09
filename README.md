@@ -5,6 +5,10 @@
 剖析lodash源码，窥探强大的lodash是如何实现我们日常中需要的一些开发功能的。
 
 ## 安装
+- 使用npm
+```
+npm
+```
 
 npm i --save lodash / yarn add lodash
 
